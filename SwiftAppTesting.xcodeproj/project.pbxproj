@@ -12,6 +12,11 @@
 		808601D520530A1000636EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808601D320530A1000636EDE /* Main.storyboard */; };
 		808601D720530A1000636EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808601D620530A1000636EDE /* Assets.xcassets */; };
 		808601DA20530A1000636EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808601D820530A1000636EDE /* LaunchScreen.storyboard */; };
+		808601FB20530B2A00636EDE /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 808601F420530B2A00636EDE /* video1.mp4 */; };
+		808601FC20530B2A00636EDE /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 808601F520530B2A00636EDE /* video2.mp4 */; };
+		808601FD20530B2A00636EDE /* videoIklan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 808601F620530B2A00636EDE /* videoIklan.mp4 */; };
+		80860209205316B400636EDE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80860208205316B400636EDE /* MenuViewController.swift */; };
+		8086020B2053194500636EDE /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086020A2053194500636EDE /* MenuCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		808601D620530A1000636EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808601D920530A1000636EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808601DB20530A1000636EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808601F420530B2A00636EDE /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		808601F520530B2A00636EDE /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		808601F620530B2A00636EDE /* videoIklan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoIklan.mp4; sourceTree = "<group>"; };
+		80860208205316B400636EDE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8086020A2053194500636EDE /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,15 +64,61 @@
 		808601CE20530A1000636EDE /* SwiftAppTesting */ = {
 			isa = PBXGroup;
 			children = (
-				808601CF20530A1000636EDE /* AppDelegate.swift */,
-				808601D120530A1000636EDE /* ViewController.swift */,
-				808601D320530A1000636EDE /* Main.storyboard */,
-				808601D620530A1000636EDE /* Assets.xcassets */,
-				808601D820530A1000636EDE /* LaunchScreen.storyboard */,
-				808601DB20530A1000636EDE /* Info.plist */,
+				808601E120530A2B00636EDE /* Application */,
+				808601E320530A3D00636EDE /* Controller */,
+				808601E220530A3300636EDE /* Resource */,
+				808601E420530A4100636EDE /* Storyboard */,
+				808601F320530B2A00636EDE /* Video */,
 			);
 			path = SwiftAppTesting;
 			sourceTree = "<group>";
+		};
+		808601E120530A2B00636EDE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				808601CF20530A1000636EDE /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		808601E220530A3300636EDE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				808601D620530A1000636EDE /* Assets.xcassets */,
+				808601DB20530A1000636EDE /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		808601E320530A3D00636EDE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				808601D120530A1000636EDE /* ViewController.swift */,
+				80860208205316B400636EDE /* MenuViewController.swift */,
+				8086020A2053194500636EDE /* MenuCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		808601E420530A4100636EDE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				808601D320530A1000636EDE /* Main.storyboard */,
+				808601D820530A1000636EDE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		808601F320530B2A00636EDE /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				808601F420530B2A00636EDE /* video1.mp4 */,
+				808601F520530B2A00636EDE /* video2.mp4 */,
+				808601F620530B2A00636EDE /* videoIklan.mp4 */,
+			);
+			name = Video;
+			path = SwiftAppTesting/Video;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -124,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				808601DA20530A1000636EDE /* LaunchScreen.storyboard in Resources */,
+				808601FB20530B2A00636EDE /* video1.mp4 in Resources */,
 				808601D720530A1000636EDE /* Assets.xcassets in Resources */,
+				808601FC20530B2A00636EDE /* video2.mp4 in Resources */,
 				808601D520530A1000636EDE /* Main.storyboard in Resources */,
+				808601FD20530B2A00636EDE /* videoIklan.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				808601D220530A1000636EDE /* ViewController.swift in Sources */,
+				80860209205316B400636EDE /* MenuViewController.swift in Sources */,
 				808601D020530A1000636EDE /* AppDelegate.swift in Sources */,
+				8086020B2053194500636EDE /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -275,7 +336,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftAppTesting/Info.plist;
+				DEVELOPMENT_TEAM = 8BJ6EC66P5;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftAppTesting/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftAppTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +352,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftAppTesting/Info.plist;
+				DEVELOPMENT_TEAM = 8BJ6EC66P5;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftAppTesting/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftAppTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
